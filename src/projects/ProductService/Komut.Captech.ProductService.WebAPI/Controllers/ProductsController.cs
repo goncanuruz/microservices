@@ -14,6 +14,7 @@ namespace Komut.Captech.ProductService.WebAPI.Controllers
         [HttpPost]
         public async Task<ActionResult> Add([FromBody] CreateProductCommand createProductCommand)
         {
+
             CreatedProductDto result = await Mediator.Send(createProductCommand);
             return Created("", result);
 

@@ -1,3 +1,4 @@
+using Core.CrossCuttingConcerns.Exceptions;
 using Komut.Captech.ProductService.Application;
 using Komut.Captech.ProductService.Persistence;
 
@@ -22,6 +23,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseAuthorization();
 
