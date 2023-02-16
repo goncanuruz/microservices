@@ -14,8 +14,8 @@ public class RequestValidationBehavior<TRequest, TResponse> : IPipelineBehavior<
         _validators = validators;
     }
 
-    public Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken,
-                                  RequestHandlerDelegate<TResponse> next)
+    public Task<TResponse> Handle(TRequest request,
+                                  RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
         ValidationContext<object> context = new(request);
         List<ValidationFailure> failures = _validators
@@ -26,4 +26,5 @@ public class RequestValidationBehavior<TRequest, TResponse> : IPipelineBehavior<
         if (failures.Count != 0) throw new ValidationException(failures);
         return next();
     }
+
 }
