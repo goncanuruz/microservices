@@ -31,7 +31,7 @@ namespace Komut.Captech.ProductService.Application.Features.Products.Commands.Pr
 
             public async Task<CreatedProductDto> Handle(CreateProductCommand request, CancellationToken cancellationToken)
             {
-                await _productBusinessRules.ProductNameCanNotBeDuplicatedWhenInserted(request.Name);
+               // await _productBusinessRules.ProductNameCanNotBeDuplicatedWhenInserted(request.Name);
 
                 Product mappedProduct = _mapper.Map<Product>(request);
                 Product createdProduct = await _productRepository.AddAsync(mappedProduct);

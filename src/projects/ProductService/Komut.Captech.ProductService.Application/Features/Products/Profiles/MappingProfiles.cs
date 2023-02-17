@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Core.Persistence.Paging;
+using EventBusRabbitMQ.Events;
 using Komut.Captech.ProductService.Application.Features.Products.Commands.ProductCreate;
 using Komut.Captech.ProductService.Application.Features.Products.Dtos;
 using Komut.Captech.ProductService.Domain.Entities;
@@ -17,6 +18,8 @@ namespace Komut.Captech.ProductService.Application.Features.Products.Profiles
         {
             CreateMap<Product, CreatedProductDto>().ReverseMap();
             CreateMap<Product, CreateProductCommand>().ReverseMap();
+
+            CreateMap<ProductCreateEvent, CreateProductCommand>().ReverseMap();
             //CreateMap<IPaginate<Brand>, BrandListModel>().ReverseMap();
             //CreateMap<Brand, BrandListDto>().ReverseMap();
             //CreateMap<Brand, BrandGetByIdDto>().ReverseMap();

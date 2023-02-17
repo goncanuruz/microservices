@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
     <ProjectReference Include="..\Komut.Captech.ProductService.Persistence\Komut.Captech.ProductService.Persistence.csproj" />
   </ItemGroup>
 
