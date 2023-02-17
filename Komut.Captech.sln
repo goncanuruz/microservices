@@ -33,6 +33,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Komut.Captech.ProductServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Komut.Captech.ProductService.WebAPI", "src\projects\ProductService\Komut.Captech.ProductService.WebAPI\Komut.Captech.ProductService.WebAPI.csproj", "{907AA30D-6629-4BFC-B056-60587A959288}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{37B0F439-694C-49CB-A0CB-C8331E5EF541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "src\projects\Common\EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,10 @@ Global
 		{907AA30D-6629-4BFC-B056-60587A959288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{907AA30D-6629-4BFC-B056-60587A959288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{907AA30D-6629-4BFC-B056-60587A959288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +110,8 @@ Global
 		{E528FCF9-212C-4715-9EBF-309586D02122} = {86633BBF-61A6-4F48-BD89-4CEF65233621}
 		{1FD676AE-1908-4FCB-83BC-7C83C2336DF2} = {86633BBF-61A6-4F48-BD89-4CEF65233621}
 		{907AA30D-6629-4BFC-B056-60587A959288} = {86633BBF-61A6-4F48-BD89-4CEF65233621}
+		{37B0F439-694C-49CB-A0CB-C8331E5EF541} = {0BF5D806-4445-43CE-9477-E16680106A64}
+		{37E06FE6-EE09-4BC4-8E6D-28AE715A33D3} = {37B0F439-694C-49CB-A0CB-C8331E5EF541}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6667BD06-254F-4E2A-A961-507112B63EED}
